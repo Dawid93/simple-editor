@@ -1,0 +1,67 @@
+@import "_normalize";
+@import "_variables";
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $white;
+  background: $lightBlue;
+}
+
+.main {
+  padding: 16px;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 900px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  &__title {
+    color: $violet;
+  }
+}
+
+.form {
+  &__textArea {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    resize: vertical;
+  }
+}
+
+.options {
+  display: flex;
+  align-self: flex-end;
+}
+
+.button {
+  margin: 8px 0 8px 8px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  border-color: aqua;
+  background: none;
+  box-shadow: none;
+  outline: none;
+
+  &__save {
+    background-color: greenyellow;
+  }
+
+  &__load {
+    background-color: indianred;
+  }
+}
